@@ -40,9 +40,9 @@
                          @endforeach
 
                          @if( $user_like )  
-                        <img src="{{ asset('img/heart-red.jpg') }}" data-id="{{$image->id}}" class="btn-dislike">
+                            <img src="{{ asset('img/heart-red.jpg') }}" data-id="{{$image->id}}" class="btn-dislike">
                         @else
-                        <img src="{{ asset('img/heart-black.jpg') }}" data-id="{{$image->id}}" class="btn-like">
+                            <img src="{{ asset('img/heart-black.jpg') }}" data-id="{{$image->id}}" class="btn-like">
                         @endif
                             <a href="{{ route('image.detail', ['id'=>$image->id]) }}" class="btn btn-warning btn-sm btn-comment">
                                 Comentar ({{count($image->comments)}})

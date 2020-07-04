@@ -46,7 +46,9 @@ Route::post('user/update', 'UserController@update')->name('user.update');
 Route::get('user/image/{filename}', 'UserController@getImagen')->name('user.image');
 Route::get('image/create', 'ImageController@create')->name('image.create');
 Route::post('image/save', 'ImageController@save')->name('image.save');
+
 Route::get('/image/file/{filename}', 'ImageController@getImages')->name('home.image');
+
 Route::get('image/detalle/{id}', 'ImageController@detail')->name('image.detail');
 Route::post('content/store', 'CommentController@store')->name('content.store');
 Route::get('comment/delete/{id}', 'CommentController@delete')->name('comment.delete');

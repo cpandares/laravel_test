@@ -9,7 +9,7 @@ class Comment extends Model
     //
     protected $table = 'comments';
 
-    //Relacion de muchos a uno
+    //Relacion de uno a muchos
     public function user(){
         return $this->belongsTo('App\User', 'user_id');
     }

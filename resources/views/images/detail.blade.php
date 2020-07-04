@@ -36,7 +36,7 @@
                 <div class="card-footer">
 
                
-                <div class="likes">
+                    <div class="likes">
                         <span class="number-likes">
                             {{ count($image->likes) }} 
                         </span>
